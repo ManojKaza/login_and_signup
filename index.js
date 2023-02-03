@@ -1,13 +1,16 @@
+//Below are the packages required for the web server
 const express = require('express');
 const bodyParser = require('body-parser');
 const {Client} = require('pg');
 const uuidv4 = require('uuid').v4;
 const cookieParser = require('cookie-parser');
+
 const app = express();
 
+// 
 const client = new Client({
   host: 'localhost',
-  user: 'manoj',
+  user: 'user',
   database: 'Login',
   password: 'Admin',
   port: 5432,
